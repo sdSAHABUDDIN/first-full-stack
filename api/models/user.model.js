@@ -15,11 +15,8 @@ const userSchema=new mongoose.Schema({
   password:{
     type:String,
     required:true,
-    unique:true,
   },
 
 },{timeStamp:true})
-
-export const User=mongoose.model('User',userSchema)
-
-// exports.User=User
+const User=mongoose.model('User',userSchema)
+export default User
